@@ -27,6 +27,8 @@ const PLAYFUL_ID = 'Playful';
 const BUBBLY_ID = 'Bubbly';
 const BITSANDBYTES_ID = 'Bits and Bytes';
 const TECHNOLOGICAL_ID = 'Technological';
+const MC_ID = 'Minecraft';
+const MCB_ID = 'Minecraft Bold';
 const ARCADE_ID = 'Arcade';
 const ARCHIVO_ID = 'Archivo';
 const ARCHIVOBLACK_ID = 'Archivo Black';
@@ -49,7 +51,7 @@ class Scratch3TextBlocks {
     }
 
     get FONT_IDS () {
-        return [SANS_SERIF_ID, SERIF_ID, HANDWRITING_ID, MARKER_ID, CURLY_ID, PIXEL_ID, PLAYFUL_ID, BUBBLY_ID, ARCADE_ID, BITSANDBYTES_ID, TECHNOLOGICAL_ID, SCRATCH_ID, ARCHIVO_ID, ARCHIVOBLACK_ID];
+        return [SANS_SERIF_ID, SERIF_ID, HANDWRITING_ID, MARKER_ID, CURLY_ID, PIXEL_ID, PLAYFUL_ID, BUBBLY_ID, ARCADE_ID, BITSANDBYTES_ID, TECHNOLOGICAL_ID, SCRATCH_ID, ARCHIVO_ID, ARCHIVOBLACK_ID, MC_ID, MCB_ID];
     }
     get DEFAULT_TEXT_STATE () {
         return {
@@ -112,7 +114,13 @@ class Scratch3TextBlocks {
         }, {
             text: 'Technological',
             value: TECHNOLOGICAL_ID
-        }, {
+        },{
+            text: 'Minecraft',
+            value: MC_ID
+        },{
+            text: 'Minecraft Bold',
+            value: MCB_ID
+        },{
             text: 'Scratch',
             value: SCRATCH_ID
         }, {
