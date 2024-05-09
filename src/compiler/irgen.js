@@ -253,7 +253,10 @@ class ScriptTreeGenerator {
             if (index === -1) {
                 if (name.toLowerCase() === 'is compiled?' || 
                     name.toLowerCase() === 'is turbowarp?' || 
-                    name.toLowerCase() === 'is penguinmod or turbowarp?') {
+                    name.toLowerCase() === 'is penguinmod?' ||
+                    name.toLowerCase() === 'is electramod?' ||
+                    name.toLowerCase() === 'is penguinmod or turbowarp?' ||
+                    name.toLowerCase() === 'is electramod or penguinmod') {
                     return {
                         kind: 'constant',
                         value: true
