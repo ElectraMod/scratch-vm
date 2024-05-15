@@ -11,6 +11,16 @@ const ArgumentType = {
     /**
      * Boolean value with hexagonal placeholder
      */
+    ARRAY: 'Array',
+
+    /**
+     * Boolean value with json object "{}" placeholder
+     */
+    OBJECT: 'Object',
+
+    /**
+     * Boolean value with hexagonal placeholder
+     */
     BOOLEAN: 'Boolean',
 
     /**

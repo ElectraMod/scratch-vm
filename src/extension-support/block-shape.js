@@ -17,6 +17,11 @@ const BlockShape = {
      * Output shape: squared (any/all values; strings).
      */
     SQUARE: 3,
+
+    /**
+     * Output shape: object (objects).
+     */
+    OBJECT: 4
 };
 
 module.exports = BlockShape;

@@ -880,7 +880,7 @@ class ScriptTreeGenerator {
                     const args = this.descendCompatLayer(block);
                     args.block = block;
                     if (block.mutation) args.mutation = block.mutation;
-                    if (type === BlockType.REPORTER || type === BlockType.BOOLEAN) {
+                    if (type === BlockType.REPORTER || type === BlockType.BOOLEAN || type === BlockType.ARRAY || type === BlockType.OBJECT) {
                         return args;
                     }
                 }

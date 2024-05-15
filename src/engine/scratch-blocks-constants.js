@@ -18,10 +18,16 @@ const ScratchBlocksConstants = {
     OUTPUT_SHAPE_ROUND: 2,
 
     /**
-     * ENUM for output shape: squared (any/all values; strings).
+     * ENUM for output shape: squared (any/all values; strings; arrays).
      * @const
      */
-    OUTPUT_SHAPE_SQUARE: 3
+    OUTPUT_SHAPE_SQUARE: 3,
+
+    /**
+     * ENUM for output shape: json object "{}" (objects).
+     * @const
+     */
+    OUTPUT_SHAPE_OBJECT: 4
 };
 
 module.exports = ScratchBlocksConstants;

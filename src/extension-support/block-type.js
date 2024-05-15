@@ -4,6 +4,14 @@
  */
 const BlockType = {
     /**
+     * Array reporter with square shape
+     */
+    ARRAY: 'Array',
+    /**
+     * Object reporter with json object "{}" shape
+     */
+    OBJECT: 'Object',
+    /**
      * Boolean reporter with hexagonal shape
      */
     BOOLEAN: 'Boolean',
