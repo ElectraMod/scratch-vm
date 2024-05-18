@@ -834,7 +834,8 @@ class ExtensionManager {
                                 if (
                                     typeof result === 'number' ||
                                         typeof result === 'string' ||
-                                        typeof result === 'boolean'
+                                        typeof result === 'boolean' ||
+                                        typeof result === 'object'
                                 ) {
                                     return result;
                                 }
@@ -865,6 +866,8 @@ class ExtensionManager {
                 const normal = {
                     'angle': "number",
                     'Boolean': "boolean",
+                    'Array': "array",
+                    'Object': "object",
                     'color': "string",
                     'number': "number",
                     'string': "string",

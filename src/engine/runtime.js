@@ -106,6 +106,9 @@ const ArgumentTypeMap = (() => {
     map[ArgumentType.ARRAY] = {
         check: 'Array'
     };
+    map[ArgumentType.OBJECT] = {
+        check: 'Object'
+    };
     map[ArgumentType.MATRIX] = {
         shadow: {
             type: 'matrix',
