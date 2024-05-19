@@ -611,7 +611,7 @@ class JgDevBlocks {
         return "[\"Hi\",\"My bro is square boy!\"]";
     }
     Object() {
-        return "{\"SquareFamily\":{\"SquareBoy\":\"Square Boy\",\"ArrayDude\":\"Array Dude\"}};"
+        return "{\"SquareFamily\":{\"SquareBoy\":\"Square Boy\",\"ArrayDude\":\"Array Dude\"}}";
     }
     alignmentTestate() {
         return;
