@@ -6,6 +6,8 @@ const Cast = require('../../util/cast');
 
 const blockSeparator = '<sep gap="36"/>'; // At default scale, about 28px
 
+// Object and Array Blocks are not compatible on EM (only EM)
+
 const blocks = `
 %b26> ` +/* left shift */`
 %b27> ` +/* right shift */`
@@ -525,6 +527,30 @@ class pmOperatorsExpansion {
                     }
                 },
                 {
+                    opcode: 'stringToObject',
+                    text: '[TEXT]',
+                    blockType: BlockType.OBJECT,
+                    disableMonitor: true,
+                    arguments: {
+                        TEXT: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "{\"key\": \"value\"}"
+                        }
+                    }
+                },
+                {
+                    opcode: 'stringToArray',
+                    text: '[TEXT]',
+                    blockType: BlockType.ARRAY,
+                    disableMonitor: true,
+                    arguments: {
+                        TEXT: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "[\"A\", \"B\", \"C\"]"
+                        }
+                    }
+                },
+                {
                     opcode: 'shiftLeft',
                     text: '[num1] << [num2]',
                     blockType: BlockType.REPORTER,
@@ -944,6 +970,14 @@ class pmOperatorsExpansion {
         const idx = base.indexOf(text);
         if (idx < 0) return '';
         return base.substring(0, idx);
+    }
+
+    stringToObject(args){
+        return args.TEXT;  
+    }
+
+    stringToArray(args){
+        return args.TEXT;  
     }
 }
 

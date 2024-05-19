@@ -63,6 +63,8 @@ const defaultBuiltinExtensions = {
     jgWebsiteRequests: () => require("../extensions/jg_websiteRequests"),
     // jgJSON: handle JSON objects
     jgJSON: () => require("../extensions/jg_json"),
+
+    emJSON: () => require("../extensions/em_json"),
     // jgJSONParsed: handle JSON objects BETTER
     // jgJSONParsed: () => require("../extensions/jg_jsonParsed"),
     // jgRuntime: edit stage and other stuff

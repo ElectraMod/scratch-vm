@@ -256,6 +256,16 @@ class JgDevBlocks {
                     blockShape: BlockShape.SQUARE
                 },
                 {
+                    opcode: 'Array',
+                    text: 'array dude (square boy\'s bro)',
+                    blockType: BlockType.ARRAY
+                },
+                {
+                    opcode: 'Object',
+                    text: '0_0',
+                    blockType: BlockType.OBJECT
+                },
+                {
                     opcode: 'branchIndicatorTest',
                     text: 'this has a custom branchIndicator',
                     branchCount: 1,
@@ -596,6 +606,12 @@ class JgDevBlocks {
 
     squareReporter() {
         return 0;
+    }
+    Array() {
+        return "[\"Hi\",\"My bro is square boy!\"]";
+    }
+    Object() {
+        return "{\"SquareFamily\":{\"SquareBoy\":\"Square Boy\",\"ArrayDude\":\"Array Dude\"}};"
     }
     alignmentTestate() {
         return;
