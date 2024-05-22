@@ -50,6 +50,12 @@ const BlockType = {
     HAT: 'hat',
 
     /**
+     * Specialized reporter block that allows for the insertion and evaluation
+     * of a substack.
+     */
+    INLINE: 'inline',
+
+    /**
      * Specialized command block which may or may not run a child branch
      * If a child branch runs, the thread evaluates the loop block again.
      */

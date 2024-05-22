@@ -13,6 +13,8 @@ const {
 
 // const Cast = require('../../util/cast');
 
+// Credits to JeremyGamer13 for Original JSON ext in jg_JSON
+
 /**
  * Class for JSON blocks
  * @constructor
