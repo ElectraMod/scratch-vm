@@ -139,8 +139,6 @@ const defaultBuiltinExtensions = {
     jwPostLit: () => require("../extensions/jw_postlit"),
     // jwReflex: vector positioning (UNRELEASED, DO NOT ADD TO GUI)
     jwReflex: () => require("../extensions/jw_reflex"),
-    // Blockly 2: a faithful recreation of the original blockly blocks
-    blockly2math: () => require("../extensions/blockly-2/math.js"),
     // jwXml: hi im back haha have funny xml
     jwXml: () => require("../extensions/jw_xml"),
 
@@ -209,9 +207,7 @@ const defaultBuiltinExtensions = {
     // fr: waw 3d physics!!
     // fr3d:
     fr3d: () => require('../extensions/fr_3d'),
-
-    typescratch: () => require('../extensions/typescratch'),
-
+    
     scratch2maqueen: () => require('../extensions/scratch3_scratch2maqueen'),
 
     scratch2webserialapi: () => require('../extensions/scratch2webserialapi'),
